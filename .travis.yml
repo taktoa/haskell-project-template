@@ -1,0 +1,18 @@
+ghc:
+  - 7.8
+  - 7.6
+install:
+  - git fetch --unshallow
+  - cabal install happy hi
+  - cd package-name/tmp
+  - hi travis-ci
+       --author 'Travis CI'
+       --email 'travis-ci@example.com'
+       --repository "file://$(dirname $(dirname $(pwd)))"
+  - cd travis-ci
+  - make install
+language: haskell
+script:
+  - make configure build test bench haddock hpc
+  - runhaskell Generate.hs Travis.Ci.Example
+  - make configure build test bench haddock hpc

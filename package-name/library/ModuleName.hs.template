@@ -1,0 +1,10 @@
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
+-- | TODO
+module ${moduleName} (module ${moduleName}) where
+
+-- GENERATE: import New.Module as ${moduleName}
+
+-- | TODO
+main :: IO ()
+main = return ()

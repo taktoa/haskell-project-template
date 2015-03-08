@@ -1,0 +1,6 @@
+module Main (main) where
+
+import qualified ${moduleName}
+
+main :: IO ()
+main = ${moduleName}.main

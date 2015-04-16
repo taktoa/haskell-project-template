@@ -15,5 +15,11 @@ cabal.config
 *.prof
 *.aux
 *.hp
-Generate.hs
-HLint.hs
+*.tix
+default.nix
+shell.nix
+scratchpad.hs
+*~
+[#]*[#]
+.\#*
+

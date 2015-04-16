@@ -9,14 +9,14 @@ import Text.Regex (matchRegex, mkRegex)
 arguments :: [String]
 arguments =
     [ "report"
-    , "dist/hpc/tix/tests/tests.tix"
+    , "tests.tix"
     ]
 
 average :: (Fractional a, Real b) => [b] -> a
 average xs = realToFrac (sum xs) / genericLength xs
 
 expected :: Fractional a => a
-expected = 90
+expected = 20
 
 main :: IO ()
 main = do

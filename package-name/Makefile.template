@@ -49,3 +49,6 @@ test:
 	cabal test --jobs
 	cabal check
 	rm -f *.tix
+
+tags:
+	hasktags -e .

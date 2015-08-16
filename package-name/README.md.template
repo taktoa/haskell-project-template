@@ -1,32 +1,48 @@
 # ${packageName}
 
-``` sh
-# Update to latest version of Cabal.
+## Update to latest version of Cabal.
+```sh
 cabal update
 cabal install cabal-install
+```
 
-# Initialize a sandbox and install the package's dependencies.
+## Initialize a sandbox and install the package's dependencies.
+```sh
 make install
+```
 
-# For Nix users:
+## For Nix users:
+```sh
 make nix-shell
+```
 
-# Configure & build the package.
+## Configure & build the package.
+```sh
 make configure
 make build
+```
 
-# Test package.
+## Test package.
+```sh
 make test
+```
 
-# Run executable.
+## Run executable.
+```sh
 make run
+```
 
-# Start REPL.
+## Start REPL.
+```sh
 make repl
+```
 
-# Generate documentation.
+## Generate documentation.
+```sh
 make haddock
+```
 
-# Analyze coverage.
+## Analyze coverage.
+```sh
 make hpc
 ```
